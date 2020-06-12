@@ -31,10 +31,11 @@
         margin-left: 0px;
         position: relative;
     }
-
-    #mainScreen .wrapper .sales {
-        background: rgba(255, 255, 255, 0.8);
+    .mainScreen::after {
+        width: calc(300px + 50%);
     }
+
+
     #mainScreen .wrapper .sales .description .header h2 {
         font-size: 40px;
         line-height: 50px;
@@ -109,7 +110,7 @@
 
     #conditions .wrapperHigh .onlineBoxOffice {
         width: 50%;
-        height: 100%;
+        height: auto;
         display: block;
         box-sizing: border-box;
         padding: 30px;
@@ -143,6 +144,7 @@
     #conditions .wrapperHigh .onlineBoxOffice::after {
         width: 50%;
         height: 100%;
+
     }
 
     #conditions .wrapperLow .what_we_do {
@@ -221,6 +223,13 @@
         align-items: center;
         margin-right: 100px;
     }
+    #header .wrapper .menu_container .menu_contacts .num_wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+    #header .wrapper .menu_container .menu_contacts .num_wrapper a.emailAddress::before {
+        left: 30px;
+    }
 
     #header .wrapper .categories {
         
@@ -255,7 +264,9 @@
         margin-right: 80px;
 
     }
-
+    #mainScreen {
+        padding-top: 0px;
+    }
     #mainScreen .sales img.points {
         display: none;
     }
@@ -271,6 +282,13 @@
 
     #mainScreen::after {
         display: none;
+    }
+
+    #mainScreen .sales img.points {
+        display: none;
+    }
+    #mainScreen .wrapper .sales {
+        background: rgba(255, 255, 255, 0.8);
     }
 
     #mainScreen .wrapper .sales {

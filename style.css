@@ -147,6 +147,8 @@ body {
     display: block;
     width: 220px;
     margin: 0 auto;
+    margin-right: 0;
+    margin-left: 20px;
 }
 
 #header .wrapper p.slogan {
@@ -539,7 +541,7 @@ body {
 
 
 #mainScreen .wrapper .sales {
-    margin: 0px auto 100px auto;
+    margin: 0px auto 0px auto;
     max-width: 1170px;
     position: relative;
     display: flex;
